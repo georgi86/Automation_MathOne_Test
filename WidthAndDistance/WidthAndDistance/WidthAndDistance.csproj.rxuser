@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projectusersettings>
+	<changestatecache>
+		<codegenfilechangeinfo
+		changehash="18446744072381411721"
+		fileitemid="0a24a4f8-c003-4d75-8c5f-509177f6e639"
+		filelength="5991"
+		lastcodegentimestamp="131527953560134555">
+			<codegenfilechangeinfo
+			changehash="18446744072432190590"
+			fileitemid="da858281-d9d4-4afe-8828-68a34a5fdaf3"
+			filelength="16800"
+			lastcodegentimestamp="131527953560134555">
+			</codegenfilechangeinfo>
+		</codegenfilechangeinfo>
+		<codegenfilechangeinfo
+		changehash="15463565732538102153"
+		fileitemid="21a8e8e5-4514-481b-baa2-51f69db71bbd"
+		filelength="116140"
+		lastcodegentimestamp="131527967197429242">
+			<codegenfilechangeinfo
+			changehash="438291923"
+			fileitemid="cdea3846-a3fc-4952-8e58-a126a9d59b58"
+			filelength="13679"
+			lastcodegentimestamp="131527967197429242">
+			</codegenfilechangeinfo>
+			<codegenfilechangeinfo
+			changehash="18446744072005616472"
+			fileitemid="14d55add-3ead-4c8d-a200-7881a9b649be"
+			filelength="1121"
+			lastcodegentimestamp="131527967197429242">
+			</codegenfilechangeinfo>
+		</codegenfilechangeinfo>
+	</changestatecache>
+</projectusersettings>
