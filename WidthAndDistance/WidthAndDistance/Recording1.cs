@@ -107,8 +107,8 @@ namespace WidthAndDistance
             repo.OpenSnapXRoutine.Text1148.PressKeys("{Delete}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\AUTOMATION\\TESTS\\SnapX\\RegressionMathOne\\Routine\\Construct.mxy'.", new RecordItemIndex(6));
-            Keyboard.Press("D:\\Joro\\AUTOMATION\\TESTS\\SnapX\\RegressionMathOne\\Routine\\Construct.mxy");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\GIT_Automations\\AutomationMathOne\\Routine\\Construct.mxy'.", new RecordItemIndex(6));
+            Keyboard.Press("D:\\Joro\\GIT_Automations\\AutomationMathOne\\Routine\\Construct.mxy");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'OpenSnapXRoutine.Text1148'.", repo.OpenSnapXRoutine.Text1148Info, new RecordItemIndex(7));
@@ -147,10 +147,10 @@ namespace WidthAndDistance
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXConstructMxy.ButtonNew' at Center.", repo.SnapXConstructMxy.ButtonNewInfo, new RecordItemIndex(15));
             repo.SnapXConstructMxy.ButtonNew.Click();
-            Delay.Milliseconds(200);
+            Delay.Milliseconds(1000);
             
-            Report.Log(ReportLevel.Info, "Application", "Run application 'D:\\Joro\\AUTOMATION\\TESTS\\SnapX\\RegressionMathOne\\Reports\\Construct.STA' with arguments '' in normal mode.", new RecordItemIndex(16));
-            Host.Local.RunApplication("D:\\Joro\\AUTOMATION\\TESTS\\SnapX\\RegressionMathOne\\Reports\\Construct.STA", "", "D:\\Joro\\AUTOMATION\\TESTS\\SnapX\\RegressionMathOne\\Reports", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application 'D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA' with arguments '' in normal mode.", new RecordItemIndex(16));
+            Host.Local.RunApplication("D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA", "", "D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports", false);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Invoke Action", "Invoking Maximize() on item 'ConstructSTANotepad'.", repo.ConstructSTANotepad.SelfInfo, new RecordItemIndex(17));
