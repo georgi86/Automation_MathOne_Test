@@ -252,7 +252,6 @@ namespace WidthAndDistance
         {
             RepoItemInfo _snapxconstructmxyInfo;
             RepoItemInfo _buttonokInfo;
-            RepoItemInfo _buttonnewInfo;
             RepoItemInfo _finishInfo;
 
             /// <summary>
@@ -263,7 +262,6 @@ namespace WidthAndDistance
             {
                 _snapxconstructmxyInfo = new RepoItemInfo(this, "SnapXConstructMxy", "titlebar[@accessiblerole='TitleBar']", 30000, null, "12a61b01-96f3-475e-9ec0-1b1aea82d884");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "container/form//button[@text='&OK' and @controlid='1148']", 30000, null, "ab312d71-b386-46db-b1c3-780bd1558415");
-                _buttonnewInfo = new RepoItemInfo(this, "ButtonNew", "container/form//container/toolbar/button[@text='New' and @commandid='57600']", 30000, null, "b9187499-ba37-427b-b103-44b5351d9688");
                 _finishInfo = new RepoItemInfo(this, "Finish", "container/form/?/?/element/element/container/button[@text='Finish' and @controlid='3165']", 30000, null, "3bece437-03bc-4c10-b24d-c9ccc33623d8");
             }
 
@@ -339,29 +337,7 @@ namespace WidthAndDistance
                 }
             }
 
-            /// <summary>
-            /// The ButtonNew item.
-            /// </summary>
-            [RepositoryItem("b9187499-ba37-427b-b103-44b5351d9688")]
-            public virtual Ranorex.Button ButtonNew
-            {
-                get
-                {
-                    return _buttonnewInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonNew item info.
-            /// </summary>
-            [RepositoryItemInfo("b9187499-ba37-427b-b103-44b5351d9688")]
-            public virtual RepoItemInfo ButtonNewInfo
-            {
-                get
-                {
-                    return _buttonnewInfo;
-                }
-            }
+            
 
             /// <summary>
             /// The Finish item.

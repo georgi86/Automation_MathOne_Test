@@ -73,8 +73,8 @@ namespace WidthAndDistance
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.0")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 500;
+            Keyboard.DefaultKeyPressTime = 200;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -114,11 +114,12 @@ namespace WidthAndDistance
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'OpenSnapXRoutine.Text1148'.", repo.OpenSnapXRoutine.Text1148Info, new RecordItemIndex(7));
             repo.OpenSnapXRoutine.Text1148.PressKeys("{Return}");
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXConstructMxy.SnapXConstructMxy' at 343;9.", repo.SnapXConstructMxy.SnapXConstructMxyInfo, new RecordItemIndex(8));
-            repo.SnapXConstructMxy.SnapXConstructMxy.Click("343;9");
-            Delay.Milliseconds(200);
-            
+
+            // Click somewhere in the TitleBar to get a focus on all options in the Menu Bar
+            Report.Log(ReportLevel.Info, "Mouse", "Click somewhere in the TitleBar to get a focus on all options in the Menu Bar\r\nMouse Left Click item 'SnapXUntitled.SnapXUntitled' at 684;7.", repo.SnapXUntitled.SnapXUntitledInfo, new RecordItemIndex(0));
+            repo.SnapXUntitled.SnapXUntitled.Click("684;7");
+            Delay.Milliseconds(200);                       
+
             // "Alt" Button
             Report.Log(ReportLevel.Info, "Keyboard", "\"Alt\" Button\r\nKey sequence '{LMenu}'.", new RecordItemIndex(9));
             Keyboard.Press("{LMenu}");
@@ -144,11 +145,22 @@ namespace WidthAndDistance
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXConstructMxy.Finish' at Center.", repo.SnapXConstructMxy.FinishInfo, new RecordItemIndex(14));
             repo.SnapXConstructMxy.Finish.Click();
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXConstructMxy.ButtonNew' at Center.", repo.SnapXConstructMxy.ButtonNewInfo, new RecordItemIndex(15));
-            repo.SnapXConstructMxy.ButtonNew.Click();
-            Delay.Milliseconds(1000);
-            
+
+            // "Alt" Button
+            Report.Log(ReportLevel.Info, "Keyboard", "\"Alt\" Button\r\nKey sequence '{LMenu}'.", new RecordItemIndex(9));
+            Keyboard.Press("{LMenu}");
+            Delay.Milliseconds(0);
+
+            // "F" Button
+            Report.Log(ReportLevel.Info, "Keyboard", "\"F\" Button\r\nKey sequence 'f'.", new RecordItemIndex(10));
+            Keyboard.Press("f");
+            Delay.Milliseconds(0);
+
+            // "N" Button
+            Report.Log(ReportLevel.Info, "Keyboard", "\"N\" Button\n\nKey sequence 'n'.", new RecordItemIndex(11));
+            Keyboard.Press("n");
+            Delay.Milliseconds(2000);                        
+
             Report.Log(ReportLevel.Info, "Application", "Run application 'D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA' with arguments '' in normal mode.", new RecordItemIndex(16));
             Host.Local.RunApplication("D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA", "", "D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports", false);
             Delay.Milliseconds(0);
