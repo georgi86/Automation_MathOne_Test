@@ -81,7 +81,7 @@ namespace WidthAndDistance
 
             // Click somewhere in the TitleBar to get a focus on all options in the Menu Bar
             Report.Log(ReportLevel.Info, "Mouse", "Click somewhere in the TitleBar to get a focus on all options in the Menu Bar\r\nMouse Left Click item 'SnapXUntitled.SnapXUntitled' at 684;7.", repo.SnapXUntitled.SnapXUntitledInfo, new RecordItemIndex(0));
-            repo.SnapXUntitled.SnapXUntitled.Click("684;7");
+            repo.SnapXUntitled.SnapXUntitled.Click();
             Delay.Milliseconds(200);
             
             // "Alt" Button
