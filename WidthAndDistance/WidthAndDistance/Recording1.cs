@@ -210,8 +210,12 @@ namespace WidthAndDistance
             
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ConstructSTANotepad.Text15'.", repo.ConstructSTANotepad.Text15Info, new RecordItemIndex(19));
             Host.Current.CloseApplication(repo.ConstructSTANotepad.Text15, new Duration(0));
-            Delay.Milliseconds(0);
-            
+            Delay.Milliseconds(200);
+
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXUntitled.ButtonGo' at 47;149.", repo.SnapXUntitled.ButtonGoInfo, new RecordItemIndex(0));
+            repo.SnapXUntitled.ButtonGo.Click("47;149");
+            Delay.Milliseconds(2000);
+
         }
 
 #region Image Feature Data
