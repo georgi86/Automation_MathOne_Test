@@ -79,6 +79,9 @@ namespace WidthAndDistance
 
             Init();
 
+            string strFilePath = "D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA";
+            System.IO.File.Delete(strFilePath);
+
             // Click somewhere in the TitleBar to get a focus on all options in the Menu Bar
             Report.Log(ReportLevel.Info, "Mouse", "Click somewhere in the TitleBar to get a focus on all options in the Menu Bar\r\nMouse Left Click item 'SnapXUntitled.SnapXUntitled' at 684;7.", repo.SnapXUntitled.SnapXUntitledInfo, new RecordItemIndex(0));
             repo.SnapXUntitled.SnapXUntitled.Click();
@@ -139,8 +142,8 @@ namespace WidthAndDistance
             repo.SnapXConstructMxy.ButtonOK.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 15s.", new RecordItemIndex(13));
-            Delay.Duration(15000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(13));
+            Delay.Duration(20000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SnapXConstructMxy.Finish' at Center.", repo.SnapXConstructMxy.FinishInfo, new RecordItemIndex(14));
             repo.SnapXConstructMxy.Finish.Click();
@@ -159,16 +162,16 @@ namespace WidthAndDistance
             // "N" Button
             Report.Log(ReportLevel.Info, "Keyboard", "\"N\" Button\n\nKey sequence 'n'.", new RecordItemIndex(11));
             Keyboard.Press("n");
-            Delay.Milliseconds(2000);                        
+            Delay.Milliseconds(2000);
 
             Report.Log(ReportLevel.Info, "Application", "Run application 'D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA' with arguments '' in normal mode.", new RecordItemIndex(16));
             Host.Local.RunApplication("D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports\\Construct.STA", "", "D:\\Joro\\GIT_Automations\\AutomationMathOne\\Reports", false);
             Delay.Milliseconds(0);
-            
+
             Report.Log(ReportLevel.Info, "Invoke Action", "Invoking Maximize() on item 'ConstructSTANotepad'.", repo.ConstructSTANotepad.SelfInfo, new RecordItemIndex(17));
             repo.ConstructSTANotepad.Self.Maximize();
             Delay.Milliseconds(100);
-            
+
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (WindowText='+180.0000 \r\n+5.0000 \r\n+0.0000 \r\n+2.5000 \r\n+45.0000 \r\n+7.0711 \r\n+2.5000 \r\n+2.5000 \r\n+0.0000 \r\n+5.0000 \r\n+2.5000 \r\n+2.5000 \r\n+0.0000 \r\n+5.0000 \r\n+5.0000 \r\n+2.5000 \r\n+90.0000 \r\n+5.0000 \r\n+2.5000 \r\n+2.5000 \r\n+315.0000 \r\n+3.5355 \r\n+1.2500 \r\n+1.2500 \r\n+5.0000 \r\n+0.0000 \r\n+5.0000 \r\n+0.0000 \r\n+5.0000 \r\n+2.5000 \r\n+5.5902 \r\n+333.4349 \r\n+5.0000 \r\n+0.0000 \r\n+5.0000 \r\n+0.0000 \r\n+225.0000 \r\n+3.5355 \r\n+11.2500 \r\n+3.7500 \r\n+45.0000 \r\n+3.5355 \r\n+13.7500 \r\n+1.2500 \r\n+270.0000 \r\n+7.5000 \r\n+8.7500 \r\n+2.5000 \r\n+0.0000 \r\n+2.5000 \r\n+12.5000 \r\n+3.7500 \r\n+7.5000 \r\n+0.0000 \r\n+7.5000 \r\n+180.0000 \r\n+10.0000 \r\n+2.5000 \r\n+10.3078 \r\n+194.0362 \r\n+108.4349 \r\n+7.9057 \r\n+16.2500 \r\n+3.7500 \r\n+7.5000 \r\n+2.5000 \r\n+7.9057 \r\n+198.4349 \r\n+135.0000 \r\n+7.0711 \r\n+17.5000 \r\n+2.5000 \r\n+270.0000 \r\n+15.0000 \r\n+12.5000 \r\n+5.0000 \r\n+108.4349 \r\n+7.9057 \r\n+16.2500 \r\n+3.7500 \r\n+282.5288 \r\n+11.5244 \r\n+14.3750 \r\n+3.7500 \r\n+135.0000 \r\n+4.2426 \r\n+33.5000 \r\n+3.5000 \r\n+135.0000 \r\n+2.1213 \r\n+32.7500 \r\n+2.7500 \r\n+270.0000 \r\n+2.0000 \r\n+31.0000 \r\n+2.0000 \r\n+0.5000 \r\n+2.0000 \r\n+2.0616 \r\n+104.0362 \r\n+3.0000 \r\n+3.0000 \r\n+4.2426 \r\n+45.0000 \r\n+90.0000 \r\n+5.0000 \r\n+37.5000 \r\n+5.0000 \r\n+45.0000 \r\n+40.0000 \r\n+0.0000 \r\n+75.9638 \r\n+8.2462 \r\n+36.0000 \r\n+1.0000 \r\n+270.0000 \r\n+10.0000 \r\n+35.0000 \r\n+0.0000 \r\n+84.8056 \r\n+27.6134 \r\n+26.2500 \r\n+1.2500 \r\n+266.1859 \r\n+37.5832 \r\n+21.2500 \r\n+1.2500 \r\n+84.8056 \r\n+27.6134 \r\n+26.2500 \r\n+1.2500 \r\n+75.9638 \r\n+20.6155 \r\n+30.0000 \r\n+2.5000 \r\n+90.0000 \r\n+2.5000 \r\n+51.2500 \r\n+2.5000 \r\n+45.0000 \r\n+3.5355 \r\n+51.2500 \r\n+3.7500 \r\n+8.0000 \r\n+2.0000 \r\n+8.2462 \r\n+165.9638 \r\n+20.0000 \r\n+5.0000 \r\n+20.6155 \r\n+165.9638 \r\n+37.5000 \r\n+5.0000 \r\n+37.8319 \r\n+172.4054 \r\n+45.0000 \r\n+6.1872 \r\n+49.0625 \r\n+4.6875 \r\n+91.5911 \r\n+18.0069 \r\n+41.0000 \r\n+2.2500 \r\n+90.0000 \r\n+37.5000 \r\n+31.2500 \r\n+2.5000 \r\n+0.0000 \r\n+2.5000 \r\n+50.0000 \r\n+3.7500 \r\n+10.0000 \r\n+2.5000 \r\n+10.3078 \r\n+194.0362 \r\n+18.0000 \r\n+0.5000 \r\n+18.0069 \r\n+181.5911 \r\n+30.0000 \r\n+2.5000 \r\n+30.1040 \r\n+355.2364 \r\n+260.5377 \r\n+30.4138 \r\n+35.0000 \r\n+2.5000 \r\n+90.0000 \r\n+55.0000 \r\n+0.0000 \r\n+270.0000 \r\n+15.0000 \r\n+47.5000 \r\n+0.0000 \r\n+90.0000 \r\n+10.0000 \r\n+17.5000 \r\n+2.5000 \r\n+90.0000 \r\n+10.0000 \r\n+17.5000 \r\n+2.5000 \r\n') on item 'ConstructSTANotepad.Text15'.", repo.ConstructSTANotepad.Text15Info, new RecordItemIndex(18));
 
             string results = ((WidthAndDistance.WidthAndDistanceRepositoryFolders.ConstructSTANotepadAppFolder)repo.ConstructSTANotepad.Text15Info.ParentFolder).Text15.TextValue;
